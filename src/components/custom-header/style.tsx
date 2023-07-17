@@ -35,6 +35,12 @@ const style=StyleSheet.create({
         width: 26,
         height: 24,
     },
+    dateStyle:{
+        fontWeight:"500",
+        fontSize:20,
+        lineHeight:30,
+        color:"#868686"
+    }
 })
 
 export default style

@@ -76,6 +76,7 @@ const Home = () => {
             {/* Header */}
             <CustomHeader
                 title="The Legacy Helen Row"
+                imageRequire
                 onBackPress={() => { }}
                 onSharePress={() => { }}
                 onBookmarkPress={() => { }}
