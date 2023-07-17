@@ -18,7 +18,13 @@ export enum IMAGES {
     PLAY_BUTTON = "PLAY_BUTTON",
     LOCK_ICON = "LOCK_ICON",
     PLACEHOLDER_IMAGE = "PLACEHOLDER_IMAGE",
-    RIGHT_ARROW = "RIGHT_ARROW"
+    RIGHT_ARROW = "RIGHT_ARROW",
+
+    ONBORAD = "ONBORAD",
+    LOGIN = "LOGIN",
+    CLOSE = "CLOSE",
+    EMAIL = "EMAIL",
+    LOCK = "LOCK"
 }
 
 function getImage(name: string): number {
@@ -83,6 +89,25 @@ function getImage(name: string): number {
             break;
         case IMAGES.RIGHT_ARROW:
             iconName = require("../../assets/images/home/right-arrow/right_arrow.png");
+            break;
+
+        case IMAGES.ONBORAD:
+            iconName = require("../../assets/images/assing-image/auth-screens/GraphicPart.png");
+            break;
+        case IMAGES.LOGIN:
+            iconName = require("../../assets/images/assing-image/auth-screens/Illustration.png");
+            break;
+        case IMAGES.CLOSE:
+            iconName = require("../../assets/images/assing-image/auth-screens/CloseIcon.png");
+            break;
+        case IMAGES.CLOSE:
+            iconName = require("../../assets/images/assing-image/auth-screens/CloseIcon.png");
+            break;
+        case IMAGES.EMAIL:
+            iconName = require("../../assets/images/assing-image/text-input/EmailIcon.png");
+            break;
+        case IMAGES.LOCK:
+            iconName = require("../../assets/images/assing-image/text-input/LockIcon.png");
             break;
         default:
             iconName = null;
