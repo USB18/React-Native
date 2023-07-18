@@ -1,4 +1,6 @@
 package com.assingmentproject;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 import android.app.Application;
 import com.facebook.react.PackageList;
@@ -54,9 +56,10 @@ public class MainApplication extends Application implements ReactApplication {
     super.onCreate();
     SoLoader.init(this, /* native exopackage */ false);
     if (BuildConfig.IS_NEW_ARCHITECTURE_ENABLED) {
+           FirebaseApp.initializeApp(this);
       // If you opted-in for the New Architecture, we load the native entry point for this app.
       DefaultNewArchitectureEntryPoint.load();
     }
     ReactNativeFlipper.initializeFlipper(this, getReactNativeHost().getReactInstanceManager());
   }
-}
+} // Make sure this closing brace is present at the end of the file

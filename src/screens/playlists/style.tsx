@@ -54,13 +54,10 @@ const style = StyleSheet.create({
         color: "#878A9A"
     },
     listItemContainer: {
-        height: 75,
+        paddingVertical: 15,
         marginBottom: 15,
         backgroundColor: "#FBFBFB",
-        flexDirection: "row",
         paddingHorizontal: 15,
-        alignItems: "center",
-        justifyContent: "space-between"
     },
     subjectText: {
         fontSize: 16,
@@ -86,6 +83,41 @@ const style = StyleSheet.create({
         width: 16,
         height: 16,
         transform: [{ rotate: '180deg' }]
+    },
+    // Style for iOS ONLY...
+    datePicker: {
+        justifyContent: 'center',
+        alignItems: 'flex-start',
+        width: 320,
+        height: 260,
+        display: 'flex',
+    },
+    divider:{
+         marginTop: 10, borderBottomWidth: 1, borderBottomColor: "#E5E7EB" 
+    },
+    scheduledTimeContainer:{
+        flexDirection: "row",
+        marginTop: 10,
+        alignItems: "center",
+        justifyContent: "space-between",
+
+    },
+    scheduledTimeLabel:{
+        fontSize: 14,
+        fontWeight: "400",
+        color: "#444444"
+    },
+    scheduledTimeText:{
+        fontSize: 14,
+        fontWeight: "400",
+        color: "#444444",
+        textDecorationLine: "underline",
+        textDecorationStyle: "dotted"
+    },
+    listItemHeader:{
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-between"
     }
 })
 
